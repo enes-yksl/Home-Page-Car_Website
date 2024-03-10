@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* tam olark ne işe yarar?*/
+    font-family: "Titillium Web", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 8% ;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.1)),url(./assets/image/background\ image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+p{
+    font-size: 10px;
+    color: #fff;
+    line-height: 20px;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none; 
+    transition: ease 0.5s;
+}
+.navbar>a>img{
+    width: 200px;
+}
+.navbar ul li a:hover{
+    color: rgb(93, 92, 92);
+}
+.row{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+.desc{
+    font-size: 16px;
+}
+.col{
+    flex-basis: 50%;    
+}
+.btn{
+    padding: 12px  28px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top:  20px;
+    border: 1px solid #882006;
+    border-radius: 30%/70%;
+    cursor: pointer;
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+    transition: ease 0.5s;
+
+}
+.btn:hover {
+    background-color: black;
+    color: #fff;
+    border-color: #fff;
+
+}
+.card{
+    width: 225px;
+    height: 230px;
+    background-position:  center;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: 1px solid red;
+    position: relative;
+    transition: ease 0.5s;
+    margin: 10px 10px;
+
+}
+.card:hover{
+    transform: translateY(-10px);
+    border: #fff;
+}
+.card .card-head{
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.card .card-bottom{
+    position: absolute;
+    bottom: 25px;
+
+}
+
+.cards{
+    max-width: 500px;
+    margin: auto;
+}
+
+.card.card-1{
+    background-image: url(./assets/image/911.jpg);
+}
+.card.card-2{
+    background-image: url(./assets/image/718.jpg);
+}
+.card.card-3{
+    background-image: url(./assets/image/panamera.jpg);
+}
+.card.card-4{
+    background-image: url(./assets/image/taycan.jpg);
+}
